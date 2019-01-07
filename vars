@@ -1,0 +1,13 @@
+HOSTNAME=maxcelos
+USERS=("marcelo" "john" "michael")
+PASSWORDS=("marceloPass" "jonhPass" "michaelPass")
+SUDOERS=("marcelo" "john")
+UFW_ALLOW=("3306" "http" "https")
+SSH_PORT=22
+INSTALL_DOCKER=n
+INSTALL_NGINX=y
+INSTALL_PHP72=y
+INSTALL_MYSQL8=y
+INSTALL_COMPOSER=y
+INSTALL_JAVA_JRE=y
+INSTALL_JAVA_SDK=y
