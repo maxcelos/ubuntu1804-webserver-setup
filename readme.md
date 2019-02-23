@@ -41,3 +41,11 @@ Where it will be defined:
 - Users
 
 ## Execution
+
+Grant permission to file
+
+`sudo chmod +x deploy.sh`
+
+Run the file
+
+`sudo ./deploy.sh`
