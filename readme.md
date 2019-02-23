@@ -44,8 +44,12 @@ Where it will be defined:
 
 Grant permission to file
 
-`sudo chmod +x deploy.sh`
+```
+sudo chmod +x deploy.sh
+```
 
 Run the file
 
-`sudo ./deploy.sh`
+```
+sudo ./deploy.sh
+```
