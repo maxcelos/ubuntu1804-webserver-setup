@@ -33,9 +33,9 @@ fi
 ################################################
 apt update && apt upgrade -y
 
-locale-gen en_US en_US.UTF-8 pt_BR.UTF-8
+locale-gen $LOCALE
 
-timedatectl set-timezone America/Sao_Paulo
+timedatectl set-timezone $TIMEZONE
 
 apt update
 
@@ -207,7 +207,7 @@ then
     done
 
     # Install Docker Compose
-    curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+    curl -L https://github.com/docker/compose/releases/download/1.24.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 
     chmod +x /usr/local/bin/docker-compose
 
