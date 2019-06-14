@@ -33,13 +33,13 @@ fi
 ################################################
 apt update && apt upgrade -y
 
+source vars
+
 locale-gen $LOCALE
 
 timedatectl set-timezone $TIMEZONE
 
 apt update
-
-source vars
 
 # Set Hostname
 hostnamectl set-hostname $HOSTNAME

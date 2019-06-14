@@ -1,6 +1,6 @@
 HOSTNAME=dbtest
 USERS=("marcelo" "john" "michael")
-PASSWORDS=("noare.23" "jonhPass" "michaelPass")
+PASSWORDS=("senha" "jonhPass" "michaelPass")
 SUDOERS=("marcelo" "john")
 UFW_ALLOW=("3306")
 SSH_PORT=22
@@ -10,6 +10,6 @@ INSTALL_PHP72=n
 INSTALL_MYSQL8=n
 INSTALL_COMPOSER=n
 INSTALL_JAVA_JRE=n
-INSTALL_JAVA_SDK=yn
+INSTALL_JAVA_SDK=n
 TIMEZONE="America/Sao_Paulo"
 LOCALE="en_US en_US.UTF-8 pt_BR.UTF-8"
