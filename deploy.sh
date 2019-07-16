@@ -33,6 +33,8 @@ fi
 ################################################
 apt update && apt upgrade -y
 
+apt install ntp ntpdate -y
+
 source vars
 
 locale-gen $LOCALE
@@ -157,10 +159,9 @@ ufw enable
 # SSH Setup Update
 ################################################
 # Update sshd setup
+sed -i '/#Port 22/a Protocol 2' /etc/ssh/sshd_config
 sed -i 's/#Port 22/Port '"${SSH_PORT}"'/g' /etc/ssh/sshd_config
 sed -i 's/PermitRootLogin yes/PermitRootLogin no/g' /etc/ssh/sshd_config
-
-
 
 service ssh restart
 ################################################
